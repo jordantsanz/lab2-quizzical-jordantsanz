@@ -1,0 +1,474 @@
+/* Jordan Sanz
+CSS file for Lab 2 - Quiz Website
+7/6/2020
+*/
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fondamento', cursive;
+    color: white;
+}
+
+#main-title-holder{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/castle.jpg");
+    background-size: cover;
+    height: 65em;
+    width: auto;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+}
+
+#main-title{
+    font-size: 100px;
+    overflow: normal;
+    word-wrap: normal;
+    display: flex;
+    opacity: 0;
+    transition: 2s all ease;
+    margin: 0px;
+}
+#main-subtitle{
+    font-size: 70px;
+    
+}
+
+/* will be the cover image for the background parallax */
+.question-div, #background-info-container{
+    height: 65em;
+    width: auto;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+.background-text{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    opacity: 0;
+    transition: 400ms;
+}
+
+#background-info-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/book.jpg");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: all 2s ease;
+    height: 75em;
+}
+
+.header{
+    font-size: 50px;
+    margin-bottom: 20px
+}
+.subtitle{
+    font-size: 55px;
+    margin-bottom: 65px;
+    margin-top: 0px;
+}
+
+#question-1-div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/knight.jpg");
+}
+label{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+#question-2-choice-1, #question-2-choice-2, #question-2-choice-3, #question-2-choice-4, #question-2-choice-5, #question-2-choice-6{
+    background-size: cover;
+}
+#question-2-choice-1{
+    background-image: url("images/sword2.jpg");
+}
+#question-2-choice-2{
+    background-image: url("images/friends.jpg");
+}
+#question-2-choice-3{
+    background-image: url("images/sidekick.jpg");
+}
+#question-2-choice-4{
+    background-image: url("images/doihaveto.jpg");
+}
+#question-2-choice-5{
+    background-image: url("images/brain.jpg");
+    background-position-x: center;
+}
+#question-2-choice-6{
+    background-image: url("images/shrug.jpg");
+    background-position-y: center;
+}
+#question-2-div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/sword.jpg");
+}
+#question-3-div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/troll.jpg");
+}
+#question-3-choice-1{
+    background-image: url("images/alone.jpg");
+    background-size: cover;
+}
+#question-3-choice-2{
+    background-image: url("images/spider.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+#question-3-choice-3{
+    background-image: url("images/tiktok.jpg");
+    background-size: cover;
+}
+#question-3-choice-4{
+    background-image: url("images/inferior.jpg");
+    background-size: cover;
+}
+#question-3-choice-5{
+    background-image: url("images/fail.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+#question-3-choice-6{
+    background-image: url("images/embarrassed.jpg");
+    background-size: cover;
+}
+#question-4-div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/fork.jpg");
+}
+#question-5-div{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/end.jpg");
+}
+#question-6-div{ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/newevil.jpg");
+    background-position: top;
+}
+
+.question-title-holder{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: .500s all ease;
+
+}
+.question-choices{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+input[type=radio]{
+    display: none;
+}
+.choice{
+    background-color: #475c6c;
+    height: 250px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    flex: 1 0 25%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.16), 2px 6px 9px 3px rgba(0,0,0,0.35);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: .500s opacity ease, all ease 250ms;
+    opacity: 0;
+    transition-delay: .6s, 0;
+}
+
+.choice:hover{
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.46), 2px 6px 9px 3px rgba(0,0,0,0.55);
+}
+
+.choice:hover .choice-image-cover{
+    background-color: gold;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+input[type="radio"]:clicked {
+    background-color: black;
+}
+
+.choice-image-cover{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 66px;
+    background-color: rgba(218, 165, 32, 0.932);
+    color:  #475c6c;
+    border-radius: 8px;
+    width: 30.3%;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+    transition: 250ms background-color ease, 250ms font-size ease, 250ms font-weight ease;
+
+}
+#question-6-choice-1-cover, #question-6-choice-2-cover, #question-6-choice-3-cover, #question-6-choice-4-cover,
+#question-6-choice-5-cover, #question-6-choice-6-cover, #question-1-choice-1-cover, #question-1-choice-2-cover, #question-1-choice-3-cover, #question-1-choice-4-cover,
+#question-1-choice-5-cover, #question-1-choice-6-cover, #question-4-choice-1-cover, #question-4-choice-2-cover, #question-4-choice-3-cover, #question-4-choice-4-cover,
+#question-4-choice-5-cover, #question-4-choice-6-cover, #question-5-choice-1-cover, #question-5-choice-2-cover, #question-5-choice-3-cover, #question-5-choice-4-cover,
+#question-5-choice-5-cover, #question-5-choice-6-cover, #hero-question-1-choice-1-cover, #hero-question-1-choice-2-cover, #hero-question-1-choice-3-cover, #hero-question-2-choice-1-cover,
+#hero-question-2-choice-2-cover, #hero-question-2-choice-3-cover, #hero-question-3-choice-1-cover, #hero-question-3-choice-2-cover, #hero-question-3-choice-3-cover{ 
+    height: 200px;
+    font-size: 35px;
+    align-items: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.pop-up{  /* modal technique adapted from w3schools */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,.4);
+    align-items: center;
+    justify-content: center;
+    transition: 400ms ease all;
+}
+
+
+.popup-content{
+    background-color: #fefefe;
+    border-radius: 8px;
+    border: 5px solid rgb(248, 106, 106);
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all ease 1s;
+    align-items: center;
+    justify-content: center;
+    transition: 500ms;
+}
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: right;
+}
+.close:hover, .close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.title-popup{
+    display: none;
+}
+.something-wrong-popup{
+    display: none;
+    color: red;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 30px;
+}
+.answer-container{
+    display: none;
+    width: 100%;
+    background-color: white;
+    height: 70%;
+    text-align: center;
+    margin-top: 20px;
+    transition: 2s ease all;
+}
+
+.answer-title{
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}
+
+.answer-description{
+    color: red;
+    font-size: 30px;
+
+}
+#play-again-container{
+    display: none;
+}
+button{
+    border-radius: 4px;
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 90px;
+    font-family: 'Fondamento', cursive;
+    font-size: 55px;
+    transition: .3s ease all;
+    box-shadow: 2px black solid;
+}
+
+#play-again-button{
+    border-radius: 10px;
+    transition: .3s ease all;
+}
+
+button#secret{
+    width: 100px;
+    height: 20px;
+    margin-top: 80px;
+    opacity: 0;
+    transition: .2s all ease;
+}
+
+button#secret:hover{
+    opacity: 1;
+    background-color: red;
+}
+
+#secret-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-text{
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 10px;
+    margin-top: 58px;
+    background-color: transparent;
+}
+
+.button:hover, #play-again-button:hover{
+    background-color: white;
+    color: rgb(247, 72, 72);
+    animation-iteration-count: infinite;
+}
+
+.button:active, #play-again-button:active{
+    background-color: red;
+}
+
+/* shaking animation adapted from w3schools */
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); 
+    }}
+
+.hero{
+    display: none;
+}
+.hero-experience-background{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/dragon1.jpg");
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    display: none;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transition: 2s ease all;
+}
+
+.hero-experience-background-overlay{
+    background-color: rgba(248, 86, 11, 0.733);
+    transition: 8s ease all;
+    opacity: 0;
+    animation: fire;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+#hero-question-1-choices, #hero-question-2-choices, #hero-question-3-choics{
+    display: flex;
+    height: 100%;
+    opacity: 1;
+}
+
+#hero-question-3-div{
+    height: 58em;
+}
+
+
+@keyframes fire{
+    0%{
+        opacity: .4;
+        background-color: rgb(248, 86, 11)
+    }
+
+    50%{
+        opacity: .533;
+        background-color: rgb(214, 32, 0)
+    }
+    65%{
+        opacity: .533;
+        background-color: rgb(255, 115, 0);
+    }
+    100%{
+        opacity: .4;
+        background-color: rgb(248, 86, 11)  }
+}
+
+.hero-title, .hero-background-info, .hero-instructions{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    transition: 400ms;
+}
+
+.hero-title-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 1;
+    height: 50em;
+}
+
+#hero-1-title-holder, #hero-2-title-holder, #hero-3-title-holder{
+    opacity: 1;
+}
+
+#secret-submit{
+    background-color: rgb(255, 255, 255);
+    color: orangered;
+    margin-top: 30px;
+}

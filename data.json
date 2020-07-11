@@ -1,0 +1,343 @@
+{
+    "mainTitle": "Which adventure character archetype are you?",
+    "mainSubtitle": "Part quiz, part choose-your-own-adventure...if you choose to accept it.",
+    "titleImage": "images/castle.jpg",
+    "background": [
+        {
+            "background1": "A long time ago, an evil dragon destroyed the lands...",
+            "background2": "It was vanquished, but you feel an evil presence surrounding your village...",
+            "background3": "It is up to you to stop it."
+        }],
+
+    "questions": [
+        {
+            "header": "When you hear the word 'Challenge'...",
+            "subtitle": "What do you think of?",
+            "choices": [
+                {
+                    "image": "url",
+                    "text": "I AM SCARED",
+                    "value": "scared"
+                },
+                {
+                    "image": "url",
+                    "text": "Easy-peasy",
+                    "value": "easy"
+                },
+                {
+                    "image": "url",
+                    "text": "Do I have to get up?",
+                    "value": "up"
+                },
+                {
+                    "image": "url",
+                    "text": "Nothing is a challenge to me!",
+                    "value": "nothing"
+                },
+                {
+                    "image": "url",
+                    "text": "We'll take it carefully, but we will prevail!",
+                    "value": "carefully"
+                },
+                {
+                    "image": "url",
+                    "text": "I probably failed it already",
+                    "value": "failed"
+                }
+            ]
+        },
+        {
+            "header": "What's the most important thing to bring",
+            "subtitle": "on your journey?",
+            "choices": [
+                {
+                    "image": "url",
+                    "text": "A sword",
+                    "value": "sword"
+                },
+                {
+                    "image": "url",
+                    "text": "My friends :)",
+                    "value": "friends"
+                },
+                {
+                    "image": "url",
+                    "text": "A trusty sidekick!",
+                    "value": "sidekick"
+                },
+                {
+                    "image": "url",
+                    "text": "Do I HAVE to go?",
+                    "value": "have"
+                },
+                {
+                    "image": "url",
+                    "text": "My thinking skills",
+                    "value": "brain"
+                },
+                {
+                    "image": "url",
+                    "text": "I don't really prepare all that much for these things",
+                    "value": "prepare"
+                }
+            ]
+        },
+        {
+            "header": "Oh no! A troll forces you to face your biggest fear!",
+            "subtitle": " What do you face?",
+            "choices": [
+                {
+                    "image": "url",
+                    "text": "Being alone",
+                    "value": "alone"
+                },
+                {
+                    "image": "url",
+                    "text": "Spiders",
+                    "value": "spiders"
+                },
+                {
+                    "image": "url",
+                    "text": "Tik Tok dance challenges",
+                    "value": "tiktok"
+                },
+                {
+                    "image": "url",
+                    "text": "Being inferior",
+                    "value": "inferior"
+                },
+                {
+                    "image": "url",
+                    "text": "Knowing nothing",
+                    "value": "nothing"
+                },
+                {
+                    "image": "url",
+                    "text": "Being embarrassed",
+                    "value": "embarrassed"
+                }
+            ]
+        },
+        {
+            "header": "Phew! You made it past the troll. Next, you come to a fork in the road.",
+            "subtitle": "Which way do you decide to go?",
+            "choices": [
+                {
+                    "image": "url",
+                    "text": "I. literally. Do. Not. Care.",
+                    "value": "care"
+                },
+                {
+                    "image": "url",
+                    "text": "Left. It's the opposite of right.",
+                    "value": "left"
+                },
+                {
+                    "image": "url",
+                    "text": "Right, because I am always right",
+                    "value": "right"
+                },
+                {
+                    "image": "url",
+                    "text": "I read a map???? Is that not obvious??",
+                    "value": "map"
+                },
+                {
+                    "image": "url",
+                    "text": "I let someone else make the decision for me.",
+                    "value": "someone"
+                },
+                {
+                    "image": "url",
+                    "text": "How about we just...go back?",
+                    "value": "back"
+                }
+            ]
+        },
+        {
+            "header": "You're almost to your final destination! Wait...",
+            "subtitle": "Where were you going again?",
+            "choices": [
+                {
+                    "image": "url",
+                    "text": "To resuce my one true love <3 xoxo",
+                    "value": "love"
+                },
+                {
+                    "image": "url",
+                    "text": "Shouldn't we know this already?",
+                    "value": "know"
+                },
+                {
+                    "image": "url",
+                    "text": "I am telling you. I do not care.",
+                    "value": "care"
+                },
+                {
+                    "image": "url",
+                    "text": "Nowhere.",
+                    "value": "nowhere"
+                },
+                {
+                    "image": "url",
+                    "text": "To destroy the entire, tri-state area!",
+                    "value": "tristate"
+                },
+                {
+                    "image": "url",
+                    "text": "Home, hopefully",
+                    "value": "home"
+                }
+            ]
+        },
+        {
+            "header": "You've reached the final boss!",
+            "subtitle": " Or have you?",
+            "choices": [
+                {
+                    "image": "url",
+                    "text": "Yes, I did! All by myself!",
+                    "value": "yes"
+                },
+                {
+                    "image": "url",
+                    "text": "I AM the final boss",
+                    "value": "iam"
+                },
+                {
+                    "image": "url",
+                    "text": "'Or have you'?????? Excuse me??????",
+                    "value": "excuse"
+                },
+                {
+                    "image": "url",
+                    "text": "So now there's another quest, right? UGH",
+                    "value": "quest"
+                },
+                {
+                    "image": "url",
+                    "text": "Is that a secret button down there below submit?",
+                    "value": "really"
+                },
+                {
+                    "image": "url",
+                    "text": "Ok final boss woohoo bye bye thanks",
+                    "value": "woohoo"
+                }
+            ]
+        }
+    ],
+    "answers": [
+        {
+            "title": "the Villain!",
+            "description": "You're the evil villain! You're always out to ruin the hero, but you're lowkey a fan-favorite. Kinda fun being bad ;) ",
+            "image": "url"
+        },
+        
+        {
+            "title": "the Funny Sidekick!",
+            "description": "You're the funny sidekick! You provide the comic relief everywhere you go because you truly don't care if you succeed or not. Don't you just love apathy?",
+            "image": "url"
+        },
+
+        {
+            "title": "the Nerdy Sidekick!",
+            "description": "You're the nerdy sidekick! You're a bit nervous on your journey, but you're always loyal to the hero. Way to hang in there, pal.",
+            "image": "url"
+        },
+
+        {
+            "title": "Over-confident Anti-hero",
+            "description": "You're the over-confident anti-hero! You always try to outshine the hero with your deceptively good-looks and overwhelming confidence. Writing that, I realized it was kind of a roast, huh?",
+            "image": "url"
+        },
+
+        {
+            "title": "Wise Sage",
+            "description": "You're the Wise Sage! You always have your wits about you and plan ahead. You're the one in your group that probably has a planner calendar that's color-coded.",
+            "image": "url"
+        },
+
+        {
+            "title": "Character-in-distress",
+            "description": "You're the character-in-distress! You get kidnapped at the start of the quest, and you have to be saved. Don't you just love the one female character whose only purpose is to not have any character development whatsoever??? Me neither.",
+            "image": "url"
+        },
+        {
+            "title": "The Hero",
+            "description": "You defeated the evil dragon and saved the day! Of course you're the hero.",
+            "image": "url"
+        },
+        {
+            "title": "You lose",
+            "description": "Guess you're not as heroic as we thought :/",
+            "image": "url"
+        }
+
+    ],
+    "heroTitle": "You have stumbled upon the evil dragon!",
+    "heroBackground": "You must be the hero. Please, defeat the evil dragon!",
+    "heroInstructions": "Answer every question correctly to win the battle. Good luck.",
+    "heroQuestions": [
+    {
+        "header": "Zoom, Google Meet,",
+        "subtitle": "or Skype?",
+        "choices": [
+        {
+            "image": "url",
+            "text": "Zoom",
+            "value": "correct"
+        },
+        {
+            "image": "url",
+            "text": "Google Meet",
+            "value": "incorrect"
+        },
+        {
+            "image": "url",
+            "text": "Skype",
+            "value": "incorrect"
+        }
+]},
+
+    {
+        "header": "What is the name",
+        "subtitle": "of the dragon?",
+        "choices":[
+        {
+            "image": "url",
+            "text": "Avalar",
+            "value": "incorrect"
+        },
+        {
+            "image": "url",
+            "text": "Did you give it a name?",
+            "value": "correct"
+        },
+        {
+            "image": "url",
+            "text": "Chris",
+            "value": "incorrect"
+        }]},
+
+    {
+        "header": "Finally...",
+        "subtitle": "How long did it take to make this website?",
+        "choices":[
+        {
+            "image": "url",
+            "text": "Way too long",
+            "value": "correct"
+        },
+        {
+            "image": "url",
+            "text": "WAY too long",
+            "value": "correct"
+        },
+        {
+            "image": "url",
+            "text": "Way, WAY too long",
+            "value": "correct"
+        }
+    ]}
+]}
