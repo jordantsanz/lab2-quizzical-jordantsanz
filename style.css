@@ -482,3 +482,46 @@ button#secret:hover{
 #hero-submit-button-container{
     height: 300px;
 }
+
+@media only screen and (max-width: 640px){
+
+    #main-title{
+        font-size: 45px;
+        height: 200px;
+        white-space: pre-wrap;
+    }
+    #main-subtitle{
+        font-size: 45px;
+    }
+    #main-title-holder{
+        height: 45em;
+    }
+    .question-div{
+        height: 100%;
+    }
+    .choice{
+        flex: 1 0 40%;
+        width: 140px;
+        height: 158px;
+    }
+#question-6-choice-1-cover, #question-6-choice-2-cover, #question-6-choice-3-cover, #question-6-choice-4-cover,
+#question-6-choice-5-cover, #question-6-choice-6-cover, #question-1-choice-1-cover, #question-1-choice-2-cover, #question-1-choice-3-cover, #question-1-choice-4-cover,
+#question-1-choice-5-cover, #question-1-choice-6-cover, #question-4-choice-1-cover, #question-4-choice-2-cover, #question-4-choice-3-cover, #question-4-choice-4-cover,
+#question-4-choice-5-cover, #question-4-choice-6-cover, #question-5-choice-1-cover, #question-5-choice-2-cover, #question-5-choice-3-cover, #question-5-choice-4-cover,
+#question-5-choice-5-cover, #question-5-choice-6-cover, #hero-question-1-choice-1-cover, #hero-question-1-choice-2-cover, #hero-question-1-choice-3-cover, #hero-question-2-choice-1-cover,
+#hero-question-2-choice-2-cover, #hero-question-2-choice-3-cover, #hero-question-3-choice-1-cover, #hero-question-3-choice-2-cover, #hero-question-3-choice-3-cover{
+        width: 165px;
+        height: 125px;
+        font-size: 22px;
+    }
+
+    .choice-image-cover{
+        width: 167px;
+        font-size: 22px;
+    }
+
+    #question-2-choice-6-cover{
+        font-size: 16px;
+    }
+
+}

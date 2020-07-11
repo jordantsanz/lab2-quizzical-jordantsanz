@@ -68,7 +68,8 @@ $.getJSON("data.json", function(data){
 
 $(window).on("load", function(){
     $("#main-title").delay(200).css("opacity", "1");
-    $("#main-title").delay(700).css("font-size", "100px");
+
+    // phone-size
 })
 
 function otherModal(){
