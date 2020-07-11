@@ -239,6 +239,9 @@ input[type="radio"]:clicked {
     justify-content: center;
     text-align: center;
 }
+
+
+
 .pop-up{  /* modal technique adapted from w3schools */
     display: none;
     position: fixed;
@@ -424,6 +427,9 @@ button#secret:hover{
 
 #hero-question-3-div{
     height: 58em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
@@ -471,4 +477,8 @@ button#secret:hover{
     background-color: rgb(255, 255, 255);
     color: orangered;
     margin-top: 30px;
+}
+
+#hero-submit-button-container{
+    height: 300px;
 }

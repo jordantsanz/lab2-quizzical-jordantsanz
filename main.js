@@ -67,8 +67,8 @@ $.getJSON("data.json", function(data){
 });
 
 $(window).on("load", function(){
-    $("#main-title").delay(400).css("opacity", "1");
-    $("#main-title").delay(1000).css("font-size", "100px");
+    $("#main-title").delay(200).css("opacity", "1");
+    $("#main-title").delay(700).css("font-size", "100px");
 })
 
 function otherModal(){
@@ -79,7 +79,7 @@ function otherModal(){
 // scroll checking adapted from stackoverflow, I adapted to make it depend on center of viewing screen rather than top
 function checkScrollMid(item){
     $(document).scroll(function(){
-        let y = $(this).scrollTop() + ($(window).height() / 2);
+        let y = $(this).scrollTop() + ($(window).height() / 1.5);
         let height = $(item).offset().top;
         if(y > height){
             $(item).css("opacity", "1");
@@ -90,7 +90,7 @@ function checkScrollMid(item){
 function checkScrollQuestion(question, atATime){
     // checks scroll to see if reached question title
     $(document).scroll(function(){
-        let y = $(this).scrollTop() + ($(window).height()/5);
+        let y = $(this).scrollTop() + ($(window).height()/3.5);
         let height = $(question).offset().top;
         let a = atATime; // number of choices to reveal at once
 
@@ -100,7 +100,7 @@ function checkScrollQuestion(question, atATime){
             // changes title to visible
             $(question).find(".question-title-holder").css("opacity", "1");
 
-            let time = 800; // time counter in betewen delays
+            let time = 500; // time counter in betewen delays
             let i = 0; // number of choices that have appeared
 
             // makes each choice visible with a delay
@@ -122,7 +122,7 @@ function checkScrollQuestion(question, atATime){
 
             else{
                 if(i == 3){
-                time += 700;
+                time += 400;
                 }}
             
         }})
