@@ -25,19 +25,19 @@ Here's a list of the extra-credit I implemented:
 
 ## Screenshots
 
-![title](images/title.gif)
+![title](images/title.gif)  
 *Here is my title fading in on refresh, with the background text fading in on scroll*
 
-![questions](images/questions.gif)
+![questions](images/questions.gif)  
 *Here is an example of my question title and choices fading-in on scroll, and then auto-scroll taking over once a choice is clicked*
 
-![oops](images/oops.gif) 
+![oops](images/oops.gif)   
 *Here is an example of clicking the submit button with not all of the answers selected, making a pop-up come up with needing to choose all of the answers, then that pop-up disappearing automatically*
 
-![answer](images/answer.gif)
+![answer](images/answer.gif)   
 *Here is an example of getting one of the 8 popups, with the retry button then fading in after a couple moments*
 
-![hero](images/hero.gif)
+![hero](images/hero.gif)   
 *Here is the secret hero adventure! You must first find the hidden button, then click on it once to prompt text. Click again, and the questions all start shaking because something bad is about to happen...click one more time and you're transported to the evil dragon! With a firey animated overlay, you must answer three questions correctly to defeat the dragon and be named the hero.*
 
 
