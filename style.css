@@ -511,6 +511,7 @@ button#secret:hover{
     }
     .answer-description{
         font-size: 22px;
+        margin-bottom: 20px;
     }
     .answer-image{
         margin-bottom: 25px;
