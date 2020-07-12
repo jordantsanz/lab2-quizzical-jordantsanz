@@ -140,6 +140,17 @@ checkScrollQuestion("#question-5-div", 1);
 checkScrollQuestion("#question-6-div", 3);
 
 
+// got autoscroll function from stackoverflow
+function autoScroll(nextID){
+
+    // checks to make sure not last question
+    if(nextID != null){
+    document.querySelector("#" + nextID).scrollIntoView(
+        {
+        behavior: "smooth"
+    }); }
+}
+
 // answer calculator
 $('#submit').on('click', function(e)
 {
@@ -492,6 +503,13 @@ $('input[type="radio"]').on('click', function(e)
     $($choice).css("background-color", "red");
     $($choice).find(".choice-image-cover").css("background-color", "white").css("color", "red").css("font-weight", "bold");
     $($choice).css("opacity", "100%");
+
+
+    $nextSection = $($questionChoice).parent().parent().next();
+
+    nextID = $($nextSection).children(".question-div").attr('id');
+    autoScroll(nextID);
+
 
 })
 
