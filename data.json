@@ -13,6 +13,7 @@
         {
             "header": "When you hear the word 'Challenge'...",
             "subtitle": "What do you think of?",
+            "image": "images/knight.jpg",
             "choices": [
                 {
                     "image": "url",
@@ -49,34 +50,35 @@
         {
             "header": "What's the most important thing to bring",
             "subtitle": "on your journey?",
+            "image": "images/sword.jpg",
             "choices": [
                 {
-                    "image": "url",
+                    "image": "images/sword2.jpg",
                     "text": "A sword",
                     "value": "sword"
                 },
                 {
-                    "image": "url",
+                    "image": "images/friends.jpg",
                     "text": "My friends :)",
                     "value": "friends"
                 },
                 {
-                    "image": "url",
+                    "image": "images/sidekick.jpg",
                     "text": "A trusty sidekick!",
                     "value": "sidekick"
                 },
                 {
-                    "image": "url",
+                    "image": "images/doihaveto.jpg",
                     "text": "Do I HAVE to go?",
                     "value": "have"
                 },
                 {
-                    "image": "url",
+                    "image": "images/brain.jpg",
                     "text": "My thinking skills",
                     "value": "brain"
                 },
                 {
-                    "image": "url",
+                    "image": "images/shrug.jpg",
                     "text": "I don't really prepare all that much for these things",
                     "value": "prepare"
                 }
@@ -85,34 +87,35 @@
         {
             "header": "Oh no! A troll forces you to face your biggest fear!",
             "subtitle": " What do you face?",
+            "image": "images/troll.jpg",
             "choices": [
                 {
-                    "image": "url",
+                    "image": "images/alone.jpg",
                     "text": "Being alone",
                     "value": "alone"
                 },
                 {
-                    "image": "url",
+                    "image": "images/spider.jpg",
                     "text": "Spiders",
                     "value": "spiders"
                 },
                 {
-                    "image": "url",
+                    "image": "images/tiktok.jpg",
                     "text": "Tik Tok dance challenges",
                     "value": "tiktok"
                 },
                 {
-                    "image": "url",
+                    "image": "images/inferior.jpg",
                     "text": "Being inferior",
                     "value": "inferior"
                 },
                 {
-                    "image": "url",
+                    "image": "images/fail.jpg",
                     "text": "Knowing nothing",
                     "value": "nothing"
                 },
                 {
-                    "image": "url",
+                    "image": "images/embarrassed.jpg",
                     "text": "Being embarrassed",
                     "value": "embarrassed"
                 }
@@ -121,6 +124,7 @@
         {
             "header": "Phew! You made it past the troll. Next, you come to a fork in the road.",
             "subtitle": "Which way do you decide to go?",
+            "image": "images/fork.jpg",
             "choices": [
                 {
                     "image": "url",
@@ -157,6 +161,7 @@
         {
             "header": "You're almost to your final destination! Wait...",
             "subtitle": "Where were you going again?",
+            "image": "images/end.jpg",
             "choices": [
                 {
                     "image": "url",
@@ -193,6 +198,7 @@
         {
             "header": "You've reached the final boss!",
             "subtitle": " Or have you?",
+            "image": "images/newevil.jpg",
             "choices": [
                 {
                     "image": "url",
@@ -231,53 +237,54 @@
         {
             "title": "the Villain!",
             "description": "You're the evil villain! You're always out to ruin the hero, but you're lowkey a fan-favorite. Kinda fun being bad ;) ",
-            "image": "url"
+            "image": "images/villain.png"
         },
         
         {
             "title": "the Funny Sidekick!",
             "description": "You're the funny sidekick! You provide the comic relief everywhere you go because you truly don't care if you succeed or not. Don't you just love apathy?",
-            "image": "url"
+            "image": "images/funny.jpg"
         },
 
         {
             "title": "the Nerdy Sidekick!",
             "description": "You're the nerdy sidekick! You're a bit nervous on your journey, but you're always loyal to the hero. Way to hang in there, pal.",
-            "image": "url"
+            "image": "images/nerd.jpg"
         },
 
         {
             "title": "Over-confident Anti-hero",
-            "description": "You're the over-confident anti-hero! You always try to outshine the hero with your deceptively good-looks and overwhelming confidence. Writing that, I realized it was kind of a roast, huh?",
-            "image": "url"
+            "description": "You're the over-confident anti-hero! You always try to outshine the hero. Writing that, I realized it was kind of a roast, huh?",
+            "image": "images/confident.jpg"
         },
 
         {
             "title": "Wise Sage",
-            "description": "You're the Wise Sage! You always have your wits about you and plan ahead. You're the one in your group that probably has a planner calendar that's color-coded.",
-            "image": "url"
+            "description": "You're the Wise Sage! You always have your wits about you and plan ahead. You probably have a planner calendar that's color-coded.",
+            "image": "images/sage.jpg"
         },
 
         {
             "title": "Character-in-distress",
-            "description": "You're the character-in-distress! You get kidnapped at the start of the quest, and you have to be saved. Don't you just love the one female character whose only purpose is to not have any character development whatsoever??? Me neither.",
-            "image": "url"
+            "description": "You're the character-in-distress! You get kidnapped at the start of the quest, and you have to be saved. Sad.",
+            "image": "images/distress.jpg"
         },
         {
             "title": "The Hero",
             "description": "You defeated the evil dragon and saved the day! Of course you're the hero.",
-            "image": "url"
+            "image": "images/hero.jpg"
         },
         {
             "title": "You lose",
             "description": "Guess you're not as heroic as we thought :/",
-            "image": "url"
+            "image": "images/loser.jpg"
         }
 
     ],
     "heroTitle": "You have stumbled upon the evil dragon!",
     "heroBackground": "You must be the hero. Please, defeat the evil dragon!",
     "heroInstructions": "Answer every question correctly to win the battle. Good luck.",
+    "heroImage": "images/dragon1.jpg",
     "heroQuestions": [
     {
         "header": "Zoom, Google Meet,",

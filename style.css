@@ -82,9 +82,6 @@ body{
     margin-top: 0px;
 }
 
-#question-1-div{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/knight.jpg");
-}
 label{
     width: 100%;
     height: 100%;
@@ -93,67 +90,36 @@ label{
 #question-2-choice-1, #question-2-choice-2, #question-2-choice-3, #question-2-choice-4, #question-2-choice-5, #question-2-choice-6{
     background-size: cover;
 }
-#question-2-choice-1{
-    background-image: url("images/sword2.jpg");
-}
-#question-2-choice-2{
-    background-image: url("images/friends.jpg");
-}
-#question-2-choice-3{
-    background-image: url("images/sidekick.jpg");
-}
-#question-2-choice-4{
-    background-image: url("images/doihaveto.jpg");
-}
+
 #question-2-choice-5{
-    background-image: url("images/brain.jpg");
     background-position-x: center;
 }
 #question-2-choice-6{
-    background-image: url("images/shrug.jpg");
     background-position-y: center;
 }
-#question-2-div{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/sword.jpg");
-}
-#question-3-div{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/troll.jpg");
-}
 #question-3-choice-1{
-    background-image: url("images/alone.jpg");
     background-size: cover;
 }
 #question-3-choice-2{
-    background-image: url("images/spider.jpg");
     background-size: cover;
     background-position-y: center;
 }
 #question-3-choice-3{
-    background-image: url("images/tiktok.jpg");
     background-size: cover;
 }
 #question-3-choice-4{
-    background-image: url("images/inferior.jpg");
     background-size: cover;
 }
 #question-3-choice-5{
-    background-image: url("images/fail.jpg");
     background-size: cover;
     background-position-x: center;
     background-position-y: bottom;
 }
 #question-3-choice-6{
-    background-image: url("images/embarrassed.jpg");
     background-size: cover;
 }
-#question-4-div{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/fork.jpg");
-}
-#question-5-div{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/end.jpg");
-}
+
 #question-6-div{ 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("images/newevil.jpg");
     background-position: top;
 }
 
@@ -264,7 +230,7 @@ input[type="radio"]:clicked {
     border-radius: 8px;
     border: 5px solid rgb(248, 106, 106);
     width: 80%;
-    height: 70%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -310,7 +276,8 @@ input[type="radio"]:clicked {
     font-size: 60px;
     font-weight: bold;
     color: red;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .answer-description{
@@ -318,6 +285,17 @@ input[type="radio"]:clicked {
     font-size: 30px;
 
 }
+
+.answer-image{
+    width: 300px;
+    height: 200px;
+    border-radius: 16px;
+}
+
+#answer-7-image{
+    margin-bottom: 10px;
+}
+
 #play-again-container{
     display: none;
 }
@@ -484,6 +462,8 @@ button#secret:hover{
     height: 300px;
 }
 
+
+
 @media only screen and (max-width: 640px){
 
     #main-title{
@@ -527,9 +507,13 @@ button#secret:hover{
 
     .answer-title{
         font-size: 35px;
+        margin-bottom: 25px;
     }
     .answer-description{
         font-size: 22px;
+    }
+    .answer-image{
+        margin-bottom: 25px;
     }
 
 }

@@ -25,10 +25,19 @@ $.getJSON("data.json", function(data){
         $('#title-' + (question + 1)).append(data.questions[question].header);
         $('#subtitle-' + (question + 1)).append(data.questions[question].subtitle);
 
+        // adds background image if available
+        if (data.questions[question].image != "url"){
+        $('#question-' + (question + 1) + '-div').css("background-image", "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(" + data.questions[question].image + ")");
+        }
+
         // loops through every choice for the question
         for (let choice=0; choice < data.questions[question].choices.length; choice++){
             $('#question-' + (question + 1) + '-choice-' + (choice + 1) + "-cover").append(data.questions[question].choices[choice].text);
             $('#question-' + (question + 1) + '-choice-' + (choice + 1) + '-radio').val(data.questions[question].choices[choice].value);
+
+            if(data.questions[question].choices[choice].image != "url"){
+                $('#question-' + (question + 1) + '-choice-' + (choice + 1)).css("background-image", "url(" + data.questions[question].choices[choice].image + ")");
+            }
         }
     }
 
@@ -36,7 +45,8 @@ $.getJSON("data.json", function(data){
     for (let a=0; a < data.answers.length; a++){
         $('#answer-' + (a + 1) + '-title').append(data.answers[a].title);
         $('#answer-' + (a + 1) + '-description').append(data.answers[a].description);
-        $('#answer-' + (a + 1) + '-image').append(data.answers[a].image);
+        $('#answer-' + (a + 1) + '-image').attr("src", data.answers[a].image);
+        console.log(data.answers[a].image);
     }
 
     // reading in text at the top
@@ -52,6 +62,7 @@ $.getJSON("data.json", function(data){
     $(".hero-title").append(data.heroTitle);
     $(".hero-background-info").append(data.heroBackground);
     $(".hero-instructions").append(data.heroInstructions);
+    $(".hero-experience-background").css("background-image", "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(" + data.heroImage + ")");
 
     // for every hero question
     for (let b=0; b<data.heroQuestions.length; b++){
