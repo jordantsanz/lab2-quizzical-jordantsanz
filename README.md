@@ -1,8 +1,8 @@
-# Title
+# Lab 2 - Adventure Quiz: What Adventure Character Archetype Are You? 
 
 *This is my Quiz website for Lab 2! It is adventure-themed: it's a quiz that finds your adventure archetype, but there's also a hidden quest to defeat a hidden dragon and become the archetypal hero!*
 
-[deployed url](https://dartmouth-cs52-20x.github.io/lab2-quizzical-jordantsanz/index.html)
+[Adventure Quiz](https://dartmouth-cs52-20x.github.io/lab2-quizzical-jordantsanz/index.html)
 
 ## What Worked Well
 Learning jQuery took a bit, but I eventually got the hang of it. It was hard doing the .hide()/.show() while also trying to put animations on my modals, but then I figured out a work-around. The auto-scroll from jQuery was really helpful and made everything run very smoothly, and putting only the containers as "display: none" and then changing the displays of those to show the things inside of them was helpful for transitions and ease. Clicking the questions was easy, and making everything change colors around it was also nice and worked well.
