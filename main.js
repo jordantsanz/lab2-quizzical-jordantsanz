@@ -78,7 +78,7 @@ $.getJSON("data.json", function(data){
 });
 
 $(window).on("load", function(){
-    $("#main-title").delay(200).css("opacity", "1");
+    $("#main-title").delay(50).css("opacity", "1");
 
     // phone-size
 })
